@@ -1,5 +1,4 @@
 ﻿using Calculator_WPF_MVVM.ViewModels;
-using System;
 using System.Windows;
 
 namespace Calculator_WPF_MVVM
