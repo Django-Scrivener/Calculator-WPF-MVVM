@@ -3,15 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Calculator_WPF_MVVM"
+        xmlns:local="clr-namespace:Calculator_WPF_MVVM" xmlns:views="clr-namespace:Calculator_WPF_MVVM.Views"
         mc:Ignorable="d"
-        Title="Calculator" Height="100" Width="600">
+        Title="Calculator" Height="100" Width="1000">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0*"/>
-            <ColumnDefinition Width="21*"/>
-            <ColumnDefinition Width="79*"/>
-        </Grid.ColumnDefinitions>
-
+        <views:CalculatorView />
     </Grid>
 </Window>
