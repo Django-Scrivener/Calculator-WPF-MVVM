@@ -37,7 +37,7 @@
             Grid.Column="2"
             Height="50"
             Width="200"
-            Text="" />
+            Text="Test" />
 
         <TextBlock
             Grid.Row="0"
@@ -52,7 +52,7 @@
             Grid.Column="4"
             Height="50"
             Width="200"
-            Text="" />
+            Text="{Binding Result}" />
 
         <Button
             Grid.Row="0"
@@ -60,6 +60,7 @@
             Height="50"
             Width="200"
             Margin="20 0 10 0"
+            Command="{Binding AddCommand}"
             Content="Add"/>
 
     </Grid>
