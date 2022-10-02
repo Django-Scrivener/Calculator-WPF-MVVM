@@ -1,6 +1,6 @@
 # Calculator-WPF-MVVM
 
-Simple calulator app created in C#.
+Simple calculator app created in C#.
 Uses WPF and implements the MVVM design pattern.
 
-Test with visual studio 2022.
+Compiled with visual studio 2022.
