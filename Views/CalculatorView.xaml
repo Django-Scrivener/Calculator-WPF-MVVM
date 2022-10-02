@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Calculator_WPF_MVVM.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="100" d:DesignWidth="1000" >
+             d:DesignHeight="25" d:DesignWidth="500" >
     <Grid Height="90" VerticalAlignment="Center">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto" />
@@ -13,16 +13,16 @@
             <ColumnDefinition Width="auto" />
             <ColumnDefinition Width="auto" />
             <ColumnDefinition Width="auto" />
-            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="auto" />
         </Grid.ColumnDefinitions>
 
         <TextBox
             Grid.Row="0"
             Grid.Column="0"
-            Height="50"
-            Width="200"
-            Margin="10 0 10 0"
-            Text="" />
+            Height="18"
+            Width="75"
+            Margin="10 0 0 0"
+            Text="{Binding FieldA}" />
         
         <TextBlock
             Grid.Row="0"
@@ -35,9 +35,9 @@
         <TextBox
             Grid.Row="0"
             Grid.Column="2"
-            Height="50"
-            Width="200"
-            Text="Test" />
+            Height="18"
+            Width="75"
+            Text="{Binding FieldB}" />
 
         <TextBlock
             Grid.Row="0"
@@ -50,15 +50,16 @@
         <TextBox
             Grid.Row="0"
             Grid.Column="4"
-            Height="50"
-            Width="200"
-            Text="{Binding Result}" />
+            Height="18"
+            Width="75"
+            Text="{Binding Result}"
+            IsEnabled="False" />
 
         <Button
             Grid.Row="0"
             Grid.Column="5"
-            Height="50"
-            Width="200"
+            Height="18"
+            Width="75"
             Margin="20 0 10 0"
             Command="{Binding AddCommand}"
             Content="Add"/>

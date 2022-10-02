@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator_WPF_MVVM" xmlns:views="clr-namespace:Calculator_WPF_MVVM.Views"
         mc:Ignorable="d"
-        Title="Calculator" Height="100" Width="1000">
+        Title="Calculator" Height="100" Width="410">
     <Grid>
         <views:CalculatorView DataContext="{Binding CurrentViewModel}"/>
     </Grid>

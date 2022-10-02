@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Calculator_WPF_MVVM.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,8 @@ namespace Calculator_WPF_MVVM.Commands
     {
         public event EventHandler CanExecuteChanged;
 
+        private readonly CalculatorViewModel _calculatorViewModel;
+
         public bool CanExecute(object parameter)
         {
             return true;
@@ -21,9 +24,17 @@ namespace Calculator_WPF_MVVM.Commands
             CanExecuteChanged?.Invoke(this, new EventArgs());
         }
 
+        public CalculateResultCommand(CalculatorViewModel calculatorViewModel)
+        {
+            _calculatorViewModel = calculatorViewModel;
+        }
+
         public void Execute(object parameter)
         {
-            Console.WriteLine("Calculating Result");
+            //int result = int.Parse(_calculatorViewModel.FieldA) + int.Parse(_calculatorViewModel.FieldB);
+            //_calculatorViewModel.Result = result.ToString();
+
+            _calculatorViewModel.Result = _calculatorViewModel.FieldA + _calculatorViewModel.FieldB;
         }
     }
 }
